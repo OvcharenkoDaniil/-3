@@ -43,7 +43,12 @@ namespace lab3
             }
         }
 
-       
+        static Bus()
+        {
+            Console.WriteLine("This is a static constructor");
+        }
+
+        
 
 
     }

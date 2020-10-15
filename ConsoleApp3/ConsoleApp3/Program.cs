@@ -159,7 +159,27 @@ namespace lab3
                 }
             }
 
-            
+            Console.WriteLine("Задайте срок эксплуатации: ");
+            int critical_year = int.Parse(Console.ReadLine());
+            Console.WriteLine("Автобусы, эксплуатирующиеся больше заданного срока: ");
+
+            for (int i = 0; i < Size; i++)
+            {
+                Buses[i].operating_age(ref Buses[i], out Operation_time);
+
+                if (Operation_time > critical_year)
+                {
+                    Buses[i].Output();
+                    break;
+                }
+                
+            }
+            Console.WriteLine();
+            Console.WriteLine("Анонимный тип: ");
+            var anon = new { Surname = "Овчаренко", Bus_number = "777", Initials = "Д.Д", Route_number = "123456", Bus_brand = "Suz", Year_started_operation = "2018", Mileage = "7777" };
+            Console.WriteLine("{0},{1} является водителем автобуса номер {2}, движущегося по маршруту {3}. Марка автобуса: {4}, год начала эксплуатации: {5}, пробег: {6}",
+            anon.Surname, anon.Initials, anon.Bus_number, anon.Route_number, anon.Bus_brand, anon.Year_started_operation, anon.Mileage);
+            Console.ReadKey();
             }
         }
     }

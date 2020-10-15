@@ -99,5 +99,24 @@ namespace lab3
 
         }
 
-      
- }
+        partial class Bus
+        {
+            public void Output()
+            { 
+                Console.WriteLine("{0},{1} является водителем автобуса номер {2}, движущегося по маршруту {3}. Марка автобуса: {4}, год начала эксплуатации: {5}, пробег: {6}", 
+                Surname, Initials,Bus_number, Route_number,Bus_brand, Year_started_operation, Mileage);
+        
+            }
+
+        }
+        class Program
+        {
+
+        static void Main(string[] args)
+        {
+            int Operation_time, Size;
+            string num;
+
+        }
+        }
+    }

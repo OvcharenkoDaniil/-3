@@ -138,7 +138,16 @@ namespace lab3
             Console.WriteLine();
 
 
-           
+            Console.WriteLine($"Строка представляющая объект Buses: {Buses[0].ToString()}");
+
+            Console.WriteLine($"Экземпляры Buses[0] и Buses[1] равны: {Buses[0].Equals(Buses[1])}");
+
+            Console.WriteLine($"Хеш-код экземпляра Buses[0]: {Buses[0].GetHashCode()}");
+
+            Console.WriteLine($"Тип экземпляра Buses[0]: {Buses[0].GetType()}");
+
+            
+            
             }
         }
     }

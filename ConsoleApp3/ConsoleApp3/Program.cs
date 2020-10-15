@@ -147,6 +147,18 @@ namespace lab3
             Console.WriteLine($"Тип экземпляра Buses[0]: {Buses[0].GetType()}");
 
             
+            Console.WriteLine("Введите номер маршрута: ");
+            num = Convert.ToString(Console.ReadLine());
+
+            for (int i = 0; i < Size; i++)
+            {
+                if (Buses[i].Route_number == num)
+                {
+                    Buses[i].Output();
+                    break;
+                }
+            }
+
             
             }
         }

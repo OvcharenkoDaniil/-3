@@ -31,6 +31,18 @@ namespace lab3
         //{
         //    Console.WriteLine("This is a private constructor!");
         //}
+        public string Temp
+        {
+            get
+            {
+                return temp;
+            }
+            protected set
+            {
+                temp = value;
+            }
+        }
+
        
 
 

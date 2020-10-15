@@ -48,7 +48,42 @@ namespace lab3
             Console.WriteLine("This is a static constructor");
         }
 
-        
+        public Bus()
+        {
+            Surname = "Муругин";
+            Bus_number = 1;
+            Initials = "В.А.";
+            Route_number = "111";
+            Bus_brand = "МАЗ";
+            Year_started_operation = 2019;
+            Mileage = 1000;
+            Counter++;
+        }
+
+        public Bus(string Sur, int Bus_num, string Init, string Route_num, string Brand, int Year, int Mile)
+        {
+            Surname = Sur;
+            Bus_number = Bus_num;
+            Initials = Init;
+            Route_number = Route_num;
+            Bus_brand = Brand;
+            Year_started_operation = Year;
+            Mileage = Mile;
+            Counter++;
+        }
+
+        public Bus(string Sur, int Year, string Init, int Bus_num, int Mile, string Route_num = "666", string Brand = "Mercedess")
+        {
+            Surname = Sur;
+            Bus_number = Bus_num;
+            Initials = Init;
+            Route_number = Route_num;
+            Bus_brand = Brand;
+            Year_started_operation = Year;
+            Mileage = Mile;
+            Counter++;
+        }
+
 
 
     }

@@ -112,11 +112,21 @@ namespace lab3
         class Program
         {
 
-        static void Main(string[] args)
-        {
-            int Operation_time, Size;
+            static void Main(string[] args)
+            {
+                int Operation_time, Size;
             string num;
+            
+            Console.WriteLine("Введите размер массива классов Bus: ");
+                Size = int.Parse(Console.ReadLine());
+                Bus[] Buses = new Bus[Size];
 
-        }
+            //Простой конструктор (без параметров)
+            Buses[0] = new Bus();
+            Buses[0].Output();
+            Console.WriteLine();
+
+            
+            }
         }
     }

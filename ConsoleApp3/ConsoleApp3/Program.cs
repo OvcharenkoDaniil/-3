@@ -126,6 +126,10 @@ namespace lab3
             Buses[0].Output();
             Console.WriteLine();
 
+            //Конструктор с параметрами
+            Buses[1] = new Bus("Куликов", 3, "Д.Н.", "30", "АААА", 2016, 3000);
+            Buses[1].Output();
+            Console.WriteLine();
             
             }
         }

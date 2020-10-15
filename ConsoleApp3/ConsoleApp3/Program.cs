@@ -130,7 +130,15 @@ namespace lab3
             Buses[1] = new Bus("Куликов", 3, "Д.Н.", "30", "АААА", 2016, 3000);
             Buses[1].Output();
             Console.WriteLine();
-            
+            //Конструктор с параметрами по умолчанию
+            Buses[2] = new Bus("Савельев", 2014, "Д.А.",5, 5000);
+            Buses[2].Output();
+            Buses[2].operating_age(ref Buses[2], out Operation_time);
+            Console.WriteLine("Количество лет эксплуатации автобуса: {0}", Operation_time);
+            Console.WriteLine();
+
+
+           
             }
         }
     }

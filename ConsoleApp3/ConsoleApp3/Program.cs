@@ -84,6 +84,7 @@ namespace lab3
             Counter++;
         }
 
+        static readonly string readonly_string = "You can only read this string!";
 
 
     }
